@@ -77,12 +77,16 @@
       });
     });
     $('.get_out').click(function(){
+      var time_out = <%= DateTime.now.strftime("%H").to_i %>
+      var time_in = <%=  @absent.time_in %>
+      var work_time = time_out - time_in
+      
       $(this).attr('disabled','disabled')
       $('.get_in').removeAttr('disabled','disabled')
       $.ajax({
         url: "<%= get_out_path %>",
         type: 'PUT',
-        data: { "absent[time_out]": "<%= DateTime.now.strftime("%H").to_i %>", "absent[working_time]": "<%= DateTime.now.strftime("%H").to_i %>" },
+        data: { "absent[time_out]": "<%= DateTime.now.strftime("%H").to_i %>", "absent[working_time]": work_time },
         context: document.body
       }).done(function() {
         $(this).addClass("done");
