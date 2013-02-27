@@ -1,0 +1,114 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1361508346.4505036:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%be2ffd1007dcb3c6ab5c06ae84e23c5bI"logical_path;
+FI":active_admin/components/jquery.aa.checkbox-toggler.js;
+TI"pathname;
+FI"›/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.checkbox-toggler.js.coffee;
+TI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2013-02-22T11:39:47+07:00;
+FI"	body;
+FI"­
+(function() {
+
+  window.AA.CheckboxToggler = AA.CheckboxToggler = (function() {
+
+    function CheckboxToggler(options, container) {
+      var defaults;
+      this.options = options;
+      this.container = container;
+      defaults = {};
+      this.options = $.extend({}, defaults, options);
+      this._init();
+      this._bind();
+    }
+
+    CheckboxToggler.prototype._init = function() {
+      if (!this.container) {
+        throw new Error("Container element not found");
+      } else {
+        this.$container = $(this.container);
+      }
+      if (!this.$container.find(".toggle_all").length) {
+        throw new Error("'toggle all' checkbox not found");
+      } else {
+        this.toggle_all_checkbox = this.$container.find(".toggle_all");
+      }
+      return this.checkboxes = this.$container.find(":checkbox").not(this.toggle_all_checkbox);
+    };
+
+    CheckboxToggler.prototype._bind = function() {
+      var _this = this;
+      this.checkboxes.bind("change", function(e) {
+        return _this._didChangeCheckbox(e.target);
+      });
+      return this.toggle_all_checkbox.bind("change", function(e) {
+        return _this._didChangeToggleAllCheckbox();
+      });
+    };
+
+    CheckboxToggler.prototype._didChangeCheckbox = function(checkbox) {
+      if (this.checkboxes.filter(":checked").length === this.checkboxes.length - 1) {
+        return this._uncheckToggleAllCheckbox();
+      } else if (this.checkboxes.filter(":checked").length === this.checkboxes.length) {
+        return this._checkToggleAllCheckbox();
+      }
+    };
+
+    CheckboxToggler.prototype._didChangeToggleAllCheckbox = function() {
+      if (this.toggle_all_checkbox.attr("checked") === "checked") {
+        return this._checkAllCheckboxes();
+      } else {
+        return this._uncheckAllCheckboxes();
+      }
+    };
+
+    CheckboxToggler.prototype._uncheckToggleAllCheckbox = function() {
+      return this.toggle_all_checkbox.removeAttr("checked");
+    };
+
+    CheckboxToggler.prototype._checkToggleAllCheckbox = function() {
+      return this.toggle_all_checkbox.attr("checked", "checked");
+    };
+
+    CheckboxToggler.prototype._uncheckAllCheckboxes = function() {
+      var _this = this;
+      return this.checkboxes.each(function(index, el) {
+        $(el).removeAttr("checked");
+        return _this._didChangeCheckbox(el);
+      });
+    };
+
+    CheckboxToggler.prototype._checkAllCheckboxes = function() {
+      var _this = this;
+      return this.checkboxes.each(function(index, el) {
+        $(el).attr("checked", "checked");
+        return _this._didChangeCheckbox(el);
+      });
+    };
+
+    return CheckboxToggler;
+
+  })();
+
+  (function($) {
+    return $.widget.bridge('checkboxToggler', AA.CheckboxToggler);
+  })(jQuery);
+
+}).call(this);
+;
+TI"asset_paths;
+F[I"›/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.checkbox-toggler.js.coffee;
+TI"dependency_paths;
+F[{I"	path;
+FI"›/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.checkbox-toggler.js.coffee;
+TI"
+mtime;
+FIu:	TimeÄF€¼Éóž
+:@_zoneI"WIT;
+T:nano_numi':nano_deni:submicro")P:offsetipbI"hexdigest;
+F"%f8b47d6d91db1fb6e1c3b8bbcb37d59dI"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

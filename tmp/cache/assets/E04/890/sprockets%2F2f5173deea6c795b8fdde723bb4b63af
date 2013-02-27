@@ -1,0 +1,339 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1361933229.5197318:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%8b113b75bd0edaa5343fd8b7c327344aI"logical_path;
+FI"application.js;
+TI"pathname;
+FI"0$root/app/assets/javascripts/application.js;
+TI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2013-02-27T09:46:59+07:00;
+FI"	body;
+FI"…// This is a manifest file that'll be compiled into including all the files listed below.
+// Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
+// be included in the compiled file accessible from http://example.com/assets/application.js
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// the compiled file.
+//
+
+$(document).ready(function() {
+    $('.pulang').hide();
+    
+    $(document).ready(function() {
+        // Create two variable with the names of the months and days in an array
+        var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
+        var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+        // Create a newDate() object
+        var newDate = new Date();
+        // Extract the current date from Date object
+        newDate.setDate(newDate.getDate());
+        // Output the day, date, month and year   
+        $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+
+        setInterval( function() {
+            // Create a newDate() object and extract the seconds of the current time on the visitor's
+            var seconds = new Date().getSeconds();
+            // Add a leading zero to seconds value
+            $("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+        },1000);
+
+        setInterval( function() {
+            // Create a newDate() object and extract the minutes of the current time on the visitor's
+            var minutes = new Date().getMinutes();
+            // Add a leading zero to the minutes value
+            $("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+        },1000);
+
+        setInterval( function() {
+            // Create a newDate() object and extract the hours of the current time on the visitor's
+            var hours = new Date().getHours();
+            // Add a leading zero to the hours value
+            $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+        }, 1000);	
+    });
+    
+});
+;
+FI"asset_paths;
+F[$I"q/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/jquery-rails-2.2.1/vendor/assets/javascripts/jquery.js;
+TI"u/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/jquery-rails-2.2.1/vendor/assets/javascripts/jquery_ujs.js;
+TI"—/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-transition.js;
+TI"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-alert.js;
+TI"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-modal.js;
+TI"•/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-dropdown.js;
+TI"–/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-scrollspy.js;
+TI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tab.js;
+TI"”/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tooltip.js;
+TI"”/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-popover.js;
+TI"“/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-button.js;
+TI"•/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-collapse.js;
+TI"•/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-carousel.js;
+TI"–/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-typeahead.js;
+TI"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-affix.js;
+TI"‚/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap.js;
+TI"t/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/jquery-rails-2.2.1/vendor/assets/javascripts/jquery-ui.js;
+TI"ƒ/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/lib/namespace.js.coffee;
+TI"›/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.checkbox-toggler.js.coffee;
+TI"˜/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.dropdown-menu.js.coffee;
+TI"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.popover.js.coffee;
+TI"¡/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.table-checkbox-toggler.js.coffee;
+TI"‡/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages/application.js.coffee;
+TI"‰/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages/batch_actions.js.coffee;
+TI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/application.js;
+TI"x/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/base.js;
+TI"1$root/app/assets/javascripts/active_admin.js;
+TI"5$root/app/assets/javascripts/bootstrap.js.coffee;
+TI"*$root/app/assets/javascripts/clock.js;
+TI"0$root/app/assets/javascripts/home.js.coffee;
+TI"0$root/app/assets/javascripts/application.js;
+TI"dependency_paths;
+F[({I"	path;
+FI"0$root/app/assets/javascripts/application.js;
+TI"
+mtime;
+FIu:	TimebG€&6´»
+:@_zoneI"WIT;
+T:nano_numif:nano_deni:submicro"	p:offsetipbI"hexdigest;
+F"%2a4bb7f3642343b2e291eb34a17b063a{I"	path;
+FI"!$root/app/assets/javascripts;
+TI"
+mtime;
+FIu;bG€æ“´»
+;I"WIT;
+T;iØ;i;"!`;ipbI"hexdigest;
+F"%bcb787fee489d039ab1746a00aaeded4{I"	path;
+FI"q/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/jquery-rails-2.2.1/vendor/assets/javascripts/jquery.js;
+TI"
+mtime;
+FIu;§F€4Áyº
+;I"WIT;
+T;i8;i;"‚@;ipbI"hexdigest;
+F"%53bf97cb01d1ff6047dce10abf121b2b{I"	path;
+FI"u/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/jquery-rails-2.2.1/vendor/assets/javascripts/jquery_ujs.js;
+TI"
+mtime;
+FIu;§F€ÔÐyº
+;I"WIT;
+T;iH;i;"„;ipbI"hexdigest;
+F"%4361aaa3c1478d2edb37daae7621f730{I"	path;
+FI"—/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-transition.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%51d63d7820b4c38449ce41e23baff655{I"	path;
+FI"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-alert.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%459a9e54bb17d7bbee467386fd9a7ecc{I"	path;
+FI"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-modal.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%1e20e95df58c3721a272fadecaac6d51{I"	path;
+FI"•/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-dropdown.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%2e49bbead2219aba8e7b535dd84a4f54{I"	path;
+FI"–/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-scrollspy.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%6af70e472a8693be2974b9177e0e0333{I"	path;
+FI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tab.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%5da4b9ca705300d339713ca1b510411e{I"	path;
+FI"”/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tooltip.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%4d1dc4935c7ebcf593ea1fc5d4cc3d28{I"	path;
+FI"”/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-popover.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%9b74d1a9e6b8ecdf9f98890d26b498c4{I"	path;
+FI"“/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-button.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%11aaa3e96610b1419b9e85e587ed0eee{I"	path;
+FI"•/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-collapse.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%5b6253649dda1844d6694abe32d7b958{I"	path;
+FI"•/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-carousel.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%a2ca9bb4fa07f3d7df2e5e2f49960a18{I"	path;
+FI"–/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-typeahead.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%40f055c3be520c8e0d251828cf077c1f{I"	path;
+FI"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap/bootstrap-affix.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%732a2fc12a71621e97f756edc27b2162{I"	path;
+FI"‚/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/javascripts/twitter/bootstrap.js;
+TI"
+mtime;
+FIu;ÆF€FX
+;I"WIT;
+T;i½;i;"•p;ipbI"hexdigest;
+F"%1602bd593550be60a87a13d1201daccf{I"	path;
+FI"t/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/jquery-rails-2.2.1/vendor/assets/javascripts/jquery-ui.js;
+TI"
+mtime;
+FIu;§F€4Áyº
+;I"WIT;
+T;i8;i;"‚@;ipbI"hexdigest;
+F"%fce0932ecedb4415eee99f480eea2263{I"	path;
+FI"ƒ/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/lib/namespace.js.coffee;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%57de8ffc94fc26b1e4a51033a72680c0{I"	path;
+FI"›/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.checkbox-toggler.js.coffee;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%f8b47d6d91db1fb6e1c3b8bbcb37d59d{I"	path;
+FI"˜/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.dropdown-menu.js.coffee;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%a6bba460287c2864ada605f32726c77c{I"	path;
+FI"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.popover.js.coffee;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%599cf228e1adc1d08620c4a076dc91ea{I"	path;
+FI"¡/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.table-checkbox-toggler.js.coffee;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%20c249fa197391405e355be56428d4c8{I"	path;
+FI"‡/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages/application.js.coffee;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%e5432fee71ec3cfe4d4198216e4133f6{I"	path;
+FI"‰/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages/batch_actions.js.coffee;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%f9083c7f522dccf6066a5e142238d951{I"	path;
+FI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/application.js;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%d25afb8f01b1dd338779481a656340e2{I"	path;
+FI"t/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/lib;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%7b7757d71e3851fbec10e29420036f5b{I"	path;
+FI"{/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%3534a62ae6ca9bdf46c57eefe6623cf7{I"	path;
+FI"v/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%ace4e897665036703356dfa63a3b2efc{I"	path;
+FI"x/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/base.js;
+TI"
+mtime;
+FIu;ÄF€¼Éóž
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%511e066ebf25c5d7658aa7e35901174b{I"	path;
+FI"1$root/app/assets/javascripts/active_admin.js;
+TI"
+mtime;
+FIu;ÄF€äc¸´
+;I"WIT;
+T;i¡;i;"Ap;ipbI"hexdigest;
+F"%1d98c0cc5cfbedb8ef0f959a151b1ed5{I"	path;
+FI"5$root/app/assets/javascripts/bootstrap.js.coffee;
+TI"
+mtime;
+FIu;ÆF€„}
+;I"WIT;
+T;iá;i;"sp;ipbI"hexdigest;
+F"%646e97aa1f935e5aee97568f61e4af6d{I"	path;
+FI"*$root/app/assets/javascripts/clock.js;
+TI"
+mtime;
+FIu;ÉF€êÞà®
+;I"WIT;
+T;iÂ;i;"– ;ipbI"hexdigest;
+F"%0487dc87e84fd86beddbff573f7ff6db{I"	path;
+FI"0$root/app/assets/javascripts/home.js.coffee;
+TI"
+mtime;
+FIu;ÅF€¾èØ
+;I"WIT;
+T;if;i;"‡;ipbI"hexdigest;
+F"%f50e3d51579225e3370988d160060f33I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

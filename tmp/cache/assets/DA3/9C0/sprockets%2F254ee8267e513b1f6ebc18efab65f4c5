@@ -1,0 +1,146 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1361508346.6933343:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%785fffe42686edf5a761cdda42acb155I"logical_path;
+FI"7active_admin/components/jquery.aa.dropdown-menu.js;
+TI"pathname;
+FI"˜/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.dropdown-menu.js.coffee;
+TI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2013-02-22T11:39:47+07:00;
+FI"	body;
+FI"²(function() {
+
+  window.AA.DropdownMenu = AA.DropdownMenu = (function() {
+
+    function DropdownMenu(options, element) {
+      var defaults;
+      this.options = options;
+      this.element = element;
+      this.$element = $(this.element);
+      defaults = {
+        fadeInDuration: 20,
+        fadeOutDuration: 100,
+        onClickActionItemCallback: null
+      };
+      this.options = $.extend({}, defaults, options);
+      this.$menuButton = this.$element.find(".dropdown_menu_button");
+      this.$menuList = this.$element.find(".dropdown_menu_list_wrapper");
+      this.isOpen = false;
+      this._buildMenuList();
+      this._bind();
+      return this;
+    }
+
+    DropdownMenu.prototype.open = function() {
+      this.isOpen = true;
+      this.$menuList.fadeIn(this.options.fadeInDuration);
+      this._positionMenuList();
+      this._positionNipple();
+      return this;
+    };
+
+    DropdownMenu.prototype.close = function() {
+      this.isOpen = false;
+      this.$menuList.fadeOut(this.options.fadeOutDuration);
+      return this;
+    };
+
+    DropdownMenu.prototype.destroy = function() {
+      this.$element.unbind();
+      this.$element = null;
+      return this;
+    };
+
+    DropdownMenu.prototype.isDisabled = function() {
+      return this.$menuButton.hasClass("disabled");
+    };
+
+    DropdownMenu.prototype.disable = function() {
+      return this.$menuButton.addClass("disabled");
+    };
+
+    DropdownMenu.prototype.enable = function() {
+      return this.$menuButton.removeClass("disabled");
+    };
+
+    DropdownMenu.prototype.option = function(key, value) {
+      if ($.isPlainObject(key)) {
+        return this.options = $.extend(true, this.options, key);
+      } else if (key != null) {
+        return this.options[key];
+      } else {
+        return this.options[key] = value;
+      }
+    };
+
+    DropdownMenu.prototype._buildMenuList = function() {
+      this.$menuList.prepend("<div class=\"dropdown_menu_nipple\"></div>");
+      return this.$menuList.hide();
+    };
+
+    DropdownMenu.prototype._bind = function() {
+      var _this = this;
+      $("body").bind('click', function() {
+        if (_this.isOpen === true) {
+          return _this.close();
+        }
+      });
+      return this.$menuButton.bind('click', function() {
+        if (!_this.isDisabled()) {
+          if (_this.isOpen === true) {
+            _this.close();
+          } else {
+            _this.open();
+          }
+        }
+        return false;
+      });
+    };
+
+    DropdownMenu.prototype._positionMenuList = function() {
+      var centerOfButtonFromLeft, centerOfmenuListFromLeft, menuListLeftPos;
+      centerOfButtonFromLeft = this.$menuButton.offset().left + this.$menuButton.outerWidth() / 2;
+      centerOfmenuListFromLeft = this.$menuList.outerWidth() / 2;
+      menuListLeftPos = centerOfButtonFromLeft - centerOfmenuListFromLeft;
+      return this.$menuList.css("left", menuListLeftPos);
+    };
+
+    DropdownMenu.prototype._positionNipple = function() {
+      var $nipple, bottomOfButtonFromTop, centerOfmenuListFromLeft, centerOfnippleFromLeft, nippleLeftPos;
+      centerOfmenuListFromLeft = this.$menuList.outerWidth() / 2;
+      bottomOfButtonFromTop = this.$menuButton.offset().top + this.$menuButton.outerHeight() + 10;
+      this.$menuList.css("top", bottomOfButtonFromTop);
+      $nipple = this.$menuList.find(".dropdown_menu_nipple");
+      centerOfnippleFromLeft = $nipple.outerWidth() / 2;
+      nippleLeftPos = centerOfmenuListFromLeft - centerOfnippleFromLeft;
+      return $nipple.css("left", nippleLeftPos);
+    };
+
+    return DropdownMenu;
+
+  })();
+
+  (function($) {
+    $.widget.bridge('aaDropdownMenu', AA.DropdownMenu);
+    return $(function() {
+      return $(".dropdown_menu").aaDropdownMenu();
+    });
+  })(jQuery);
+
+}).call(this);
+;
+TI"asset_paths;
+F[I"˜/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.dropdown-menu.js.coffee;
+TI"dependency_paths;
+F[{I"	path;
+FI"˜/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.dropdown-menu.js.coffee;
+TI"
+mtime;
+FIu:	TimeÄF€¼Éóž
+:@_zoneI"WIT;
+T:nano_numi':nano_deni:submicro")P:offsetipbI"hexdigest;
+F"%a6bba460287c2864ada605f32726c77cI"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

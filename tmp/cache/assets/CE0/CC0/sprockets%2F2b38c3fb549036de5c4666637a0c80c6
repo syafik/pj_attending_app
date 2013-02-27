@@ -1,0 +1,47 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1361512997.381169:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%a9b561bb18e91263593bce021a02501fI"logical_path;
+FI" bootstrap_and_overrides.css;
+TI"pathname;
+FI"=$root/app/assets/stylesheets/bootstrap_and_overrides.css;
+TI"content_type;
+FI"text/css;
+FI"
+mtime;
+FI"2013-02-22T13:01:39+07:00;
+FI"	body;
+FI"™/*
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  */
+;
+FI"asset_paths;
+F[I"˜/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/stylesheets/twitter-bootstrap-static/bootstrap.css.erb;
+TI"š/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/stylesheets/twitter-bootstrap-static/fontawesome.css.erb;
+TI"=$root/app/assets/stylesheets/bootstrap_and_overrides.css;
+TI"dependency_paths;
+F[{I"	path;
+FI"=$root/app/assets/stylesheets/bootstrap_and_overrides.css;
+TI"
+mtime;
+FIu:	TimeÆF€„}
+:@_zoneI"WIT;
+T:nano_numiá:nano_deni:submicro"sp:offsetipbI"hexdigest;
+F"%e695d45f7f96e379c520134d9cb77a6b{I"	path;
+FI"˜/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/stylesheets/twitter-bootstrap-static/bootstrap.css.erb;
+TI"
+mtime;
+FIu;ÆF€æg
+;I"WIT;
+T;iÕ;i;"˜;ipbI"hexdigest;
+F"%ac8c4846c78b70a82363434a22e9d945{I"	path;
+FI"š/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/stylesheets/twitter-bootstrap-static/fontawesome.css.erb;
+TI"
+mtime;
+FIu;ÆF€æg
+;I"WIT;
+T;iÕ;i;"˜;ipbI"hexdigest;
+F"%98fb60ec9bea48730251bc71a68516ceI"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

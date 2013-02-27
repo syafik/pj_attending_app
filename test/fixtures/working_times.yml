@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  hour: 2013-02-25 10:07:50
+
+two:
+  hour: 2013-02-25 10:07:50

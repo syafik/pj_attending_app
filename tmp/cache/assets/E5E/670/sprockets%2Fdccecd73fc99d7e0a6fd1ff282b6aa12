@@ -1,0 +1,50 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1361508347.5939615:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%6bd6c2c078df5e3b5ec21e43b5abb621I"logical_path;
+FI"(active_admin/pages/batch_actions.js;
+TI"pathname;
+FI"‰/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages/batch_actions.js.coffee;
+TI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2013-02-22T11:39:47+07:00;
+FI"	body;
+FI"œ(function() {
+
+  jQuery(function($) {
+    $(document).delegate("#batch_actions_selector li a", "click.rails", function() {
+      $("#batch_action").val($(this).attr("data-action"));
+      return $("#collection_selection").submit();
+    });
+    if ($("#batch_actions_selector").length && $(":checkbox.toggle_all").length) {
+      if ($(".paginated_collection").find("table.index_table").length) {
+        $(".paginated_collection table").tableCheckboxToggler();
+      } else {
+        $(".paginated_collection").checkboxToggler();
+      }
+      return $(".paginated_collection").find(":checkbox").bind("change", function() {
+        if ($(".paginated_collection").find(":checkbox").filter(":checked").length > 0) {
+          return $("#batch_actions_selector").aaDropdownMenu("enable");
+        } else {
+          return $("#batch_actions_selector").aaDropdownMenu("disable");
+        }
+      });
+    }
+  });
+
+}).call(this);
+;
+TI"asset_paths;
+F[I"‰/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages/batch_actions.js.coffee;
+TI"dependency_paths;
+F[{I"	path;
+FI"‰/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages/batch_actions.js.coffee;
+TI"
+mtime;
+FIu:	TimeÄF€¼Éóž
+:@_zoneI"WIT;
+T:nano_numi':nano_deni:submicro")P:offsetipbI"hexdigest;
+F"%f9083c7f522dccf6066a5e142238d951I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

@@ -1,0 +1,716 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1361526496.8663862:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%38f520770297aaf27de619bf24281f03I"logical_path;
+FI"application.css;
+TI"pathname;
+FI"1$root/app/assets/stylesheets/application.css;
+TI"content_type;
+FI"text/css;
+FI"
+mtime;
+FI"2013-02-22T16:48:13+07:00;
+FI"	body;
+FI"E/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+*/
+
+
+.sign_in{
+    margin-top: 120px;
+}
+
+/* If you want you can use font-face */
+/*@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('BebasNeue-webfont.eot');
+    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeue-webfont.woff') format('woff'),
+        url('BebasNeue-webfont.ttf') format('truetype'),
+        url('BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+.container_hour {width: 960px; margin: 0 auto; overflow: hidden;}
+
+.clock {width:635px; margin:0 auto; padding:30px; border:1px solid #333; color:black; }
+
+#Date { padding-bottom: 65px; font-family: monospace, Arial, Helvetica, sans-serif; font-size:36px; text-align:center; text-shadow:0 0 5px #00c6ff; }
+
+ul .hour { width:800px; margin:0 auto; padding:0px; list-style:none; text-align:center;}
+ul li.hour { display:inline; font-size:10em; text-align:center; font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; text-shadow:0 0 5px #00c6ff; }
+
+#point { position:relative; -moz-animation:mymove 1s ease infinite; -webkit-animation:mymove 1s ease infinite; padding-left:10px; padding-right:10px; }
+
+/* Simple Animation */
+@-webkit-keyframes mymove 
+{
+    0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+50% {opacity:0; text-shadow:none; }
+100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	
+}
+
+@-moz-keyframes mymove 
+{
+    0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+50% {opacity:0; text-shadow:none; }
+100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	
+}
+;
+FI"asset_paths;
+F[I"1$root/app/assets/stylesheets/application.css;
+TI"7$root/app/assets/stylesheets/active_admin.css.scss;
+TI"˜/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/stylesheets/twitter-bootstrap-static/bootstrap.css.erb;
+TI"š/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/stylesheets/twitter-bootstrap-static/fontawesome.css.erb;
+TI"=$root/app/assets/stylesheets/bootstrap_and_overrides.css;
+TI"/$root/app/assets/stylesheets/home.css.scss;
+TI"dependency_paths;
+F[a{I"	path;
+FI"1$root/app/assets/stylesheets/application.css;
+TI"
+mtime;
+FIu:	TimeÉF€AŞÀ
+:@_zoneI"WIT;
+T:nano_numiˆ:nano_deni:submicro"@:offsetipbI"hexdigest;
+F"%326a6579c72e95d01e972b56ee39d9e8{I"	path;
+FI"!$root/app/assets/stylesheets;
+TI"
+mtime;
+FIu;ÉF€AŞÀ
+;I"WIT;
+T;iˆ;i;"@;ipbI"hexdigest;
+F"%ca8dd5a3ed06082fb80070d8a9f87356{I"	path;
+FI"7$root/app/assets/stylesheets/active_admin.css.scss;
+TI"
+mtime;
+FIu;ÄF€„s¸´
+;I"WIT;
+T;i²;i;"C@;ipbI"hexdigest;
+F"%75823ea119883c22fbc9ba45e6422863{I"	path;
+FI"|/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/_mixins.css.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%2f59d774629de5c2b8b0ea81259b3320{I"	path;
+FI"€/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_all.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%d758a6efd53a9160c50aa9a7f34d0ffd{I"	path;
+FI"†/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_variables.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%b6f44e4d7cb7949269642cbe370eadb7{I"	path;
+FI"‚/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_reset.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%3e064bc7ec8fbbd3154e3bba25372c11{I"	path;
+FI"†/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_gradients.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%ff17230a859bb81f3580ec697c5e3cf3{I"	path;
+FI"„/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_shadows.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%3d74a8cc30760151627f1d76eaf1ec4d{I"	path;
+FI"‚/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_icons.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%76e1d860b675c5beb66b2b7717210dda{I"	path;
+FI"„/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_rounded.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%3cbc0cbdaa40872301020a06fe1fdba6{I"	path;
+FI"„/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_buttons.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%890427ded0851ae176d93d9a16634736{I"	path;
+FI"…/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_sections.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%22a6c82f0a502334635a81668ed6d155{I"	path;
+FI"‚/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_utilities.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%56d2fd47e144f5717128ce6c637797a4{I"	path;
+FI"ƒ/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_typography.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%9ba31285ca40be27fc62e96ffb166d2a{I"	path;
+FI"m/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/_bourbon.scss;
+TI"
+mtime;
+FIu;ÄF€P#2
+;I"WIT;
+T;i;i;";ipbI"hexdigest;
+F"%35dbae1f53b275200b659c5f48b66651{I"	path;
+FI"w/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_compact.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%a2e73238e36ae9fac0ac15fd86ea072f{I"	path;
+FI"…/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_deprecated-webkit-gradient.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%1c14491c97cb19e36c716dc4330eb600{I"	path;
+FI"y/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_flex-grid.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%1386ecd1334994a29a22457480322c30{I"	path;
+FI"z/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_grid-width.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%f836b343695b75d2cd01fbc7aeef3a14{I"	path;
+FI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_linear-gradient.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%d68ee3d088018220ca02532754f3d1c6{I"	path;
+FI"}/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_modular-scale.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%c20319c38fce155951c158c257f840b0{I"	path;
+FI"x/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_px-to-em.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%d02168f090b8a425fa2df636417264b7{I"	path;
+FI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_radial-gradient.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%7e4ae2556dccf0a0e63dec8063828631{I"	path;
+FI"{/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_render-gradients.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%99889e2c3f830860e858e67306011e59{I"	path;
+FI"z/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_tint-shade.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%94b557669140b24a0e5e9cb6b4469e44{I"	path;
+FI"ƒ/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/functions/_transition-property-name.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%8f75984fc74c401230b83c664b368ac8{I"	path;
+FI"t/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_animation.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%ec10e3e3fa93cfdcb53a5b78776469e6{I"	path;
+FI"u/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_appearance.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%8529726387fd5e48c70bc5aa6e75297b{I"	path;
+FI"u/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_background.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%b4b2159131a5ee51a470c9a0119e895c{I"	path;
+FI"{/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_background-image.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%986c8cc8c9322471bcab448ff3336468{I"	path;
+FI"z/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_background-size.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%3d9fb92fafb5b5833dcc734f1d0e96bb{I"	path;
+FI"w/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_border-image.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%66ba6c6e019608c366fa8f3ecc247556{I"	path;
+FI"x/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_border-radius.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%ccbfea367b6f68fe212d141a799b0646{I"	path;
+FI"u/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_box-sizing.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%8f7642ff2ff3f8e93527b212965d2089{I"	path;
+FI"r/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_columns.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%42cc49da8dd780f0a526e5f997bfa3a1{I"	path;
+FI"s/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_flex-box.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%657f85364b5515cfd207e0f9c9cebd1c{I"	path;
+FI"t/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_font-face.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%9649358c9a4a1cfb8c511484e1a0897c{I"	path;
+FI"|/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_hidpi-media-query.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%33e94890ca6e608a9ac74096d1477a90{I"	path;
+FI"z/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_image-rendering.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%88cfb039ba7db12013530be9499ec423{I"	path;
+FI"w/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_inline-block.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%a0f2b206992948cdb0b5f89a60c51e03{I"	path;
+FI"t/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_keyframes.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%d873e04e38336e15472876a77c1aa666{I"	path;
+FI"z/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_linear-gradient.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%985aa11d48feda4d7adda659c81277ee{I"	path;
+FI"v/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_perspective.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%69080951072c7120141414f946ecd96a{I"	path;
+FI"z/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_radial-gradient.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%20cd181b185a0aece77938eebef51061{I"	path;
+FI"t/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_transform.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%a49ab3a5143bb1a80609cf6fb0abcd37{I"	path;
+FI"u/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_transition.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%8ec0c6faf3f4d3db2fe715c86622ccb8{I"	path;
+FI"v/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_user-select.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%4fa5fa2c96277e093150d6c0cbe88f81{I"	path;
+FI"v/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/css3/_placeholder.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%b44fc3834cce92d4e9fdd70e6717fadb{I"	path;
+FI"s/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_button.scss;
+TI"
+mtime;
+FIu;ÄF€P#2
+;I"WIT;
+T;i;i;";ipbI"hexdigest;
+F"%9d66c413743f92694522762958e21f03{I"	path;
+FI"u/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_clearfix.scss;
+TI"
+mtime;
+FIu;ÄF€P#2
+;I"WIT;
+T;i;i;";ipbI"hexdigest;
+F"%25950b7b2f7de24591c54024cb408d48{I"	path;
+FI"x/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_font-family.scss;
+TI"
+mtime;
+FIu;ÄF€P#2
+;I"WIT;
+T;i;i;";ipbI"hexdigest;
+F"%da114a664907c853a25e670856bab0d2{I"	path;
+FI"v/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_hide-text.scss;
+TI"
+mtime;
+FIu;ÄF€P#2
+;I"WIT;
+T;i;i;";ipbI"hexdigest;
+F"%b906a84772780bdcefd504366994fa13{I"	path;
+FI"~/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_html5-input-types.scss;
+TI"
+mtime;
+FIu;ÄF€P#2
+;I"WIT;
+T;i;i;";ipbI"hexdigest;
+F"%f6d51ae6ca1d7aae15094464f93c0b00{I"	path;
+FI"u/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_position.scss;
+TI"
+mtime;
+FIu;ÄF€P#2
+;I"WIT;
+T;i;i;";ipbI"hexdigest;
+F"%1a5391dc9ec28adb82deddd77c53ef17{I"	path;
+FI"u/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_prefixer.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%0f99563b0686171a58d5d7673135ee9b{I"	path;
+FI"y/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_retina-image.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%dbaae25c33d4144ca1c8469caebf9219{I"	path;
+FI"q/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_size.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%3eed8cb5f5d4b92732023d780ec0cb95{I"	path;
+FI"}/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_timing-functions.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%ec7e451056baf41f589a42086cd35c25{I"	path;
+FI"u/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/addons/_triangle.scss;
+TI"
+mtime;
+FIu;ÄF€ğ22
+;I"WIT;
+T;i¥;i;"“0;ipbI"hexdigest;
+F"%74893d10ca0e96a2db1b2b5270bb1ea8{I"	path;
+FI"|/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/bourbon-3.1.1/app/assets/stylesheets/_bourbon-deprecated-upcoming.scss;
+TI"
+mtime;
+FIu;ÄF€P#2
+;I"WIT;
+T;i;i;";ipbI"hexdigest;
+F"%b738bc7464f9341cf5410c01b59b69ed{I"	path;
+FI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/_base.css.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%a22e3293e15f04d19f1b0b24345622ec{I"	path;
+FI"€/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/_typography.css.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%8f2982ff2dcbd5af4620e5ce78ebfebb{I"	path;
+FI"|/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/_header.css.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%b3c18ca09606d1d4108e57486f94c24c{I"	path;
+FI"{/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/_forms.css.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%4b6e6d97a4da91f37ab97803f2016ad0{I"	path;
+FI"‰/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_comments.css.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%b486c5a6660753d492e8af971afd4ce5{I"	path;
+FI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_flash_messages.css.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%e9446d83e119f93007674f78aedef968{I"	path;
+FI"Œ/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_date_picker.css.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%c87aaeb00fa8551657dccdcea35d7565{I"	path;
+FI"‰/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_popovers.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%a543974d232b837d6a9ef90343db9c26{I"	path;
+FI"‡/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_tables.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%6e9ee4ca4c9965f0825193e80666faea{I"	path;
+FI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_batch_actions.css.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%083755359bd8472ac1baadee25b55a80{I"	path;
+FI"‰/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_blank_slates.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%0e36d321a60e9bc561104c74c6e4d218{I"	path;
+FI"ˆ/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_breadcrumbs.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%53103f0465c845dfb81bca4486cb74dc{I"	path;
+FI"Š/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%23a9e2c5ab2a68e764ef37b6c6c27fcd{I"	path;
+FI"„/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_buttons.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%55e55ade83901e1510531903c272c278{I"	path;
+FI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_grid.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%22d150832a3546de22af5ad1a64a2c0e{I"	path;
+FI"‚/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_links.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%c903687e3555673888592ddb0f149d6e{I"	path;
+FI"‡/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_pagination.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%b283fda1b3af3b8acbefe1331d9caf85{I"	path;
+FI"ƒ/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_panels.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%b09b4d0837466e6c7e2f4625637ee54e{I"	path;
+FI"„/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_columns.scss;
+TI"
+mtime;
+FIu;ÄF€¼Éó
+;I"WIT;
+T;i';i;")P;ipbI"hexdigest;
+F"%0f9f427e5abfbf193d680308330aa131{I"	path;
+FI"ƒ/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_scopes.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%d86a27f44e7596d6aa638aabdadbdd45{I"	path;
+FI"ˆ/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_status_tags.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%5e272a70af9ffa6e3ea8875b29a320b6{I"	path;
+FI"Œ/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_table_tools.css.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%f75186a13cce35a79e3425cd7cd31bac{I"	path;
+FI"/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/pages/_dashboard.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%8a1c2377d0f8b3dc13fee6b994e6546e{I"	path;
+FI"‚/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/pages/_logged_out.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%f3931fc8a0d9464880c1fdef0d0739e4{I"	path;
+FI"‚/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/structure/_footer.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%0d850f28d86717d9b0da3c8fe14c83f3{I"	path;
+FI"Š/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/structure/_main_structure.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%a284e2d9a0e2c6ed95d509d2be39958a{I"	path;
+FI"…/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/structure/_title_bar.scss;
+TI"
+mtime;
+FIu;ÄF€\Ùó
+;I"WIT;
+T;i7;i;"1;ipbI"hexdigest;
+F"%617bfff48cc920a0513d0f6dab76ffe8{I"	path;
+FI"˜/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/stylesheets/twitter-bootstrap-static/bootstrap.css.erb;
+TI"
+mtime;
+FIu;ÆF€æg
+;I"WIT;
+T;iÕ;i;"˜;ipbI"hexdigest;
+F"%ac8c4846c78b70a82363434a22e9d945{I"	path;
+FI"š/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/twitter-bootstrap-rails-2.2.4/vendor/assets/stylesheets/twitter-bootstrap-static/fontawesome.css.erb;
+TI"
+mtime;
+FIu;ÆF€æg
+;I"WIT;
+T;iÕ;i;"˜;ipbI"hexdigest;
+F"%98fb60ec9bea48730251bc71a68516ce{I"	path;
+FI"=$root/app/assets/stylesheets/bootstrap_and_overrides.css;
+TI"
+mtime;
+FIu;ÆF€„}
+;I"WIT;
+T;iá;i;"sp;ipbI"hexdigest;
+F"%e695d45f7f96e379c520134d9cb77a6b{I"	path;
+FI"/$root/app/assets/stylesheets/home.css.scss;
+TI"
+mtime;
+FIu;ÅF€ß0	Ø
+;I"WIT;
+T;i!;i;"(;ipbI"hexdigest;
+F"%0d9f3789c8251d69fcf04b227259b043I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

@@ -1,0 +1,131 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1361508346.9214697:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%c74dfb8fcc6a0ca71a1e085503ac9d80I"logical_path;
+FI"1active_admin/components/jquery.aa.popover.js;
+TI"pathname;
+FI"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.popover.js.coffee;
+TI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2013-02-22T11:39:47+07:00;
+FI"	body;
+FI"ª(function() {
+
+  window.AA.Popover = AA.Popover = (function() {
+
+    function Popover(options, element) {
+      var defaults;
+      this.options = options;
+      this.element = element;
+      this.$element = $(this.element);
+      defaults = {
+        fadeInDuration: 20,
+        fadeOutDuration: 100,
+        autoOpen: true,
+        pageWrapperElement: "#wrapper",
+        onClickActionItemCallback: null
+      };
+      this.options = $.extend({}, defaults, options);
+      this.$popover = null;
+      this.isOpen = false;
+      if ($(this.$element.attr("href")).length > 0) {
+        this.$popover = $(this.$element.attr("href"));
+      } else {
+        this.$popover = this.$element.next(".popover");
+      }
+      this._buildPopover();
+      this._bind();
+      return this;
+    }
+
+    Popover.prototype.open = function() {
+      this.isOpen = true;
+      this.$popover.fadeIn(this.options.fadeInDuration);
+      this._positionPopover();
+      this._positionNipple();
+      return this;
+    };
+
+    Popover.prototype.close = function() {
+      this.isOpen = false;
+      this.$popover.fadeOut(this.options.fadeOutDuration);
+      return this;
+    };
+
+    Popover.prototype.destroy = function() {
+      this.$element.removeData('popover');
+      this.$element.unbind();
+      this.$element = null;
+      return this;
+    };
+
+    Popover.prototype.option = function() {};
+
+    Popover.prototype._buildPopover = function() {
+      this.$popover.prepend("<div class=\"popover_nipple\"></div>");
+      this.$popover.hide();
+      return this.$popover.addClass("popover");
+    };
+
+    Popover.prototype._bind = function() {
+      var _this = this;
+      $(this.options.pageWrapperElement).bind('click', function(e) {
+        if (_this.isOpen === true) {
+          return _this.close();
+        }
+      });
+      if (this.options.autoOpen === true) {
+        return this.$element.bind('click', function() {
+          if (_this.isOpen === true) {
+            _this.close();
+          } else {
+            _this.open();
+          }
+          return false;
+        });
+      }
+    };
+
+    Popover.prototype._positionPopover = function() {
+      var centerOfButtonFromLeft, centerOfPopoverFromLeft, popoverLeftPos;
+      centerOfButtonFromLeft = this.$element.offset().left + this.$element.outerWidth() / 2;
+      centerOfPopoverFromLeft = this.$popover.outerWidth() / 2;
+      popoverLeftPos = centerOfButtonFromLeft - centerOfPopoverFromLeft;
+      return this.$popover.css("left", popoverLeftPos);
+    };
+
+    Popover.prototype._positionNipple = function() {
+      var $nipple, bottomOfButtonFromTop, centerOfPopoverFromLeft, centerOfnippleFromLeft, nippleLeftPos;
+      centerOfPopoverFromLeft = this.$popover.outerWidth() / 2;
+      bottomOfButtonFromTop = this.$element.offset().top + this.$element.outerHeight() + 10;
+      this.$popover.css("top", bottomOfButtonFromTop);
+      $nipple = this.$popover.find(".popover_nipple");
+      centerOfnippleFromLeft = $nipple.outerWidth() / 2;
+      nippleLeftPos = centerOfPopoverFromLeft - centerOfnippleFromLeft;
+      return $nipple.css("left", nippleLeftPos);
+    };
+
+    return Popover;
+
+  })();
+
+  (function($) {
+    return $.widget.bridge('popover', AA.Popover);
+  })(jQuery);
+
+}).call(this);
+;
+TI"asset_paths;
+F[I"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.popover.js.coffee;
+TI"dependency_paths;
+F[{I"	path;
+FI"’/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/components/jquery.aa.popover.js.coffee;
+TI"
+mtime;
+FIu:	TimeÄF€¼Éóž
+:@_zoneI"WIT;
+T:nano_numi':nano_deni:submicro")P:offsetipbI"hexdigest;
+F"%599cf228e1adc1d08620c4a076dc91eaI"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

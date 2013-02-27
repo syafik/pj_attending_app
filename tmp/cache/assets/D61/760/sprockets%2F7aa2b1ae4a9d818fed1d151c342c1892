@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1361508383.0475092:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%49f90dd19d217369bd78b026ee67c6d3I"logical_path;
+FI"active_admin/orderable.png;
+TI"pathname;
+FI"y/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/images/active_admin/orderable.png;
+TI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2013-02-22T11:39:47+07:00;
+FI"length;
+FI"220;
+FI"digest;
+F"%0ff6fa27c2417d2451e8e36db8a2ea75I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

@@ -1,0 +1,35 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1361512998.016586:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%ce9e2d681d21884e1ed894ba59c92bdcI"logical_path;
+FI"bootstrap.js;
+TI"pathname;
+FI"5$root/app/assets/javascripts/bootstrap.js.coffee;
+TI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2013-02-22T13:01:39+07:00;
+FI"	body;
+FI"¥(function() {
+
+  jQuery(function() {
+    $("a[rel=popover]").popover();
+    $(".tooltip").tooltip();
+    return $("a[rel=tooltip]").tooltip();
+  });
+
+}).call(this);
+;
+TI"asset_paths;
+F[I"5$root/app/assets/javascripts/bootstrap.js.coffee;
+TI"dependency_paths;
+F[{I"	path;
+FI"5$root/app/assets/javascripts/bootstrap.js.coffee;
+TI"
+mtime;
+FIu:	TimeÆF€„}
+:@_zoneI"WIT;
+T:nano_numiá:nano_deni:submicro"sp:offsetipbI"hexdigest;
+F"%646e97aa1f935e5aee97568f61e4af6dI"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

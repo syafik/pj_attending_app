@@ -1,0 +1,40 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1361508347.3838694:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%0b956e4feda1edb54a2eede594962d27I"logical_path;
+FI"&active_admin/pages/application.js;
+TI"pathname;
+FI"‡/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages/application.js.coffee;
+TI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2013-02-22T11:39:47+07:00;
+FI"	body;
+FI"(function() {
+
+  $(function() {
+    $(".datepicker").datepicker({
+      dateFormat: "yy-mm-dd"
+    });
+    $(".clear_filters_btn").click(function() {
+      window.location.search = "";
+      return false;
+    });
+    return $(".dropdown_button").popover();
+  });
+
+}).call(this);
+;
+TI"asset_paths;
+F[I"‡/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages/application.js.coffee;
+TI"dependency_paths;
+F[{I"	path;
+FI"‡/home/pushjaw/.rvm/gems/ruby-1.9.3-p327@presensi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/pages/application.js.coffee;
+TI"
+mtime;
+FIu:	TimeÄF€¼Éóž
+:@_zoneI"WIT;
+T:nano_numi':nano_deni:submicro")P:offsetipbI"hexdigest;
+F"%e5432fee71ec3cfe4d4198216e4133f6I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

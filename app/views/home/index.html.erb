@@ -1,0 +1,100 @@
+<div class="clock">
+  <div id="Date"></div>
+  <ul>
+    <li class="hour" id="hours"></li>
+    <li class="hour" id="point">:</li>
+    <li class="hour" id="min"></li>
+    <li class="hour" id="point">:</li>
+    <li class="hour" id="sec"></li>
+  </ul>
+</div>
+<% if user_signed_in? %>
+  <h1>Your Biodata</h1>
+  <table>
+    <tr>
+      <td>
+        Name  :  
+      </td>
+      <td>
+        <%= current_user.name %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Email  :
+      </td>
+      <td>
+        <%= current_user.email %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Address :
+      </td>
+      <td>
+        <%= current_user.address %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Phone :
+      </td>
+      <td>
+        <%= current_user.phone %>
+      </td>
+    </tr>
+  </table>
+  <button class="btn masuk" id="get_in">Check In</button>
+  <button class="btn pulang" id="get_out">Check Out</button>
+
+
+
+<% else %>
+  <h1>You must sign in first</h1>
+
+<% end %>
+
+<script src="/assets/clock.js" type="text/javascript"/></script>
+<script>
+  <%#*$(document).ready(function(){%>
+<%# if @absent.nil? %>
+      <%#*$('.masuk').show();%>
+      <%#*$('.pulang').hide();%>
+<%# elsif !@absent.time_out.nil? %>
+      <%#*$('.masuk').hide();%>
+      <%#*$('.pulang').show();%>
+      <%#*$('.pulang').attr('disabled','disabled')%>
+  <%# if @absent.time_out.nil? %>
+  <%#*$('.pulang').show();%>
+  <%#*$('.masuk').hide();%>
+  <%# elsif !@absent.time_out.nil? %>
+  <%#*$('.pulang').hide();%>
+  <%#*$('.masuk').hide();%>
+<%# end %>
+  <%#*});%>
+
+  $('.masuk').click(function(){
+    $(this).attr('disabled','disabled')
+    $('.pulang').removeAttr('disabled','disabled')
+    $.ajax({
+      url: "<%= get_in_path %>",
+      type: 'POST',
+      data: { "absent[working_date]": "<%= DateTime.now.strftime("%Y-%m-%d %H:%M:%S") %>", "absent[time_in]": "<%= DateTime.now.strftime("%H").to_i %>", "absent[user_id]": <%= current_user.id %> },
+      context: document.body
+    }).done(function() {
+      $(this).addClass("done");
+    });
+  });
+  $('.pulang').click(function(){ 
+    $(this).attr('disabled','disabled')
+    $('.masuk').removeAttr('disabled','disabled')
+    $.ajax({
+      url: "<%= get_out_path %>",
+      type: 'PUT',
+      data: { "absent[time_out]": "<%= DateTime.now.strftime("%H").to_i %>" },
+      context: document.body
+    }).done(function() {
+      $(this).addClass("done");
+    });
+  });
+</script>
