@@ -5,8 +5,10 @@ class Absent < ActiveRecord::Base
   before_update :check_update
   
   protected
+  
   def check_create
-    if Absent.where('user_id = ? AND DATE(working_date) = ?', current_user.id ,Date.today).count < 1
+  cond = Absent.where('user_id = ? AND DATE(working_date) = ?', current_user.id ,Date.today)
+    if cond.count < 1
       p "you can get in"
       return true
     else
@@ -16,7 +18,8 @@ class Absent < ActiveRecord::Base
   end
   
   def check_update
-    if Absent.last.time_out.nil?
+  cond = Absent.where('user_id = ? AND DATE(working_date) = ?', current_user.id ,Date.today)
+    if cond.last.time_out.nil? & ((DateTime.now.strftime("%H").to_i - cond.last.time_in) >= WorkingTime.last.hour)
       p "you can update"
       return true
     else

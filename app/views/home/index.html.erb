@@ -51,27 +51,18 @@
 
 <% else %>
   <h1>You must sign in first</h1>
-
 <% end %>
 
 <script src="/assets/clock.js" type="text/javascript"/></script>
 <script>
   $(document).ready(function(){
-<% if @absent.nil? %>
-      $('.get_in').show();
-      $('.get_out').hide();
-<% elsif !@absent.nil? & ((DateTime.now.strftime("%H").to_i - @absent.time_in) < @time_working ) %>
-      $('.get_in').hide();
-      $('.get_out').show();
-      $('.get_out').attr('disabled','disabled');
-<% elsif !@absent.nil? & ((DateTime.now.strftime("%H").to_i - @absent.time_in) >= @time_working ) %>
-      $('.get_in').hide();
-      $('.get_out').show();
-      $('.get_out').removeAttr('disabled','disabled');
-<% elsif !@absent.nil%>
-      $('.get_in').hide();
-      $('.get_out').hide();
-<% end %>
+      <% if @absent.nil? %>
+            $('.get_in').show();
+            $('.get_out').hide();
+      <% else %>
+            $('.get_in').hide();
+            $('.get_out').show();
+      <% end %>
 
     $('.get_in').click(function(){
       $(this).attr('disabled','disabled')
@@ -91,7 +82,7 @@
       $.ajax({
         url: "<%= get_out_path %>",
         type: 'PUT',
-        data: { "absent[time_out]": "<%= DateTime.now.strftime("%H").to_i %>", "absent[working_time]": "<%= DateTime.now.strftime("%H").to_i %>" - "absent[time_in]" },
+        data: { "absent[time_out]": "<%= DateTime.now.strftime("%H").to_i %>", "absent[working_time]": "<%= DateTime.now.strftime("%H").to_i %>" },
         context: document.body
       }).done(function() {
         $(this).addClass("done");
