@@ -10,7 +10,7 @@
 //= require_tree .
 
 $(document).ready(function() {
-    $('.pulang').hide();
+//    $('.get_out').hide();
     
     $(document).ready(function() {
         // Create two variable with the names of the months and days in an array

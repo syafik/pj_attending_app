@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   before_filter :authenticate_user!
     
   def index
+    @time_working = WorkingTime.last.hour
     @absent = Absent.where('user_id = ? AND working_date BETWEEN ? AND ?' ,  current_user.id,  DateTime.now.beginning_of_day.strftime("%Y-%m-%d %H:%M:%S"), DateTime.now.end_of_day.strftime("%Y-%m-%d %H:%M:%S")).last
     @users = User.all
   end
