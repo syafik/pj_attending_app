@@ -2,6 +2,7 @@ NewAbsent::Application.routes.draw do
   devise_for :users
 
   get "home/index"
+  get "/index_home" => "home#index_home"
   post "/get_in" => "home#update_get_in"
   put "/get_out" => "home#update_get_out"
   root :to => 'Home#index'

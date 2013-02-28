@@ -44,7 +44,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">NewAbsent</a>
+          <a class="brand" href="#">Pushjaw Presence</a>
           <div class="container nav-collapse">
             <ul class="nav">
               <li><%= link_to "Link1", "/path1"  %></li>
@@ -59,19 +59,19 @@
     <div class="container">
       <div class="row">
         <div class="span9">
-          <%#= bootstrap_flash %>
+<%#= bootstrap_flash %>
           <%= yield %>
         </div>
         <div class="span3">
           <div class="well sidebar-nav">
             <h3>User</h3>
             <ul class="nav nav-list">
-              <li class="nav-header">User</li>
+              <%#*<li class="nav-header">User</li>%>
               <% if user_signed_in? %>
                 <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %></li>
               <% else %>
                 <li><%= link_to "Sign In",  new_user_session_path  %></li>
-                <li><%= link_to "Sign Up",  new_user_registration_path  %></li>
+  <%#*<li><%= link_to "Sign Up",  new_user_registration_path  %></li>
               <% end %>
             </ul>
           </div><!--/.well -->
@@ -79,10 +79,19 @@
       </div><!--/row-->
 
       <footer>
-          <%#*<p>Absent</p>%>
       </footer>
 
     </div> <!-- /container -->
+        <div class="clock">
+          <div id="Date"></div>
+          <ul>
+            <li class="hour" id="hours"></li>
+            <li class="hour" id="point">:</li>
+            <li class="hour" id="min"></li>
+            <li class="hour" id="point">:</li>
+            <li class="hour" id="sec"></li>
+          </ul>
+        </div>
 
     <!-- Javascripts
     ================================================== -->
