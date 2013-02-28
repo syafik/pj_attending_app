@@ -1,7 +1,3 @@
 $('.get_in').hide();
-$('.get_out').show();
 alert("<%= flash[:alert] %>");
 $('.get_out').removeAttr('disabled','disabled');
-<%- if !@absent.time_out.nil? %>
-$('.get_out').hide();
-<%- end%>
