@@ -47,3 +47,25 @@ ul li.hour { display:inline; font-size:10em; text-align:center; font-family:'Beb
 50% {opacity:0; text-shadow:none; }
 100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	
 }
+
+.img-circle{
+    margin-top: 5px;
+    float: right;
+    margin-right: 25px;
+}
+
+.container_header{
+    height: 55px;
+}
+
+.center_tab{
+    margin-top: 10px;
+}
+
+.marr{
+    width: 950px;
+}
+
+.dolph{
+    margin-top: 10px;
+}
