@@ -24,7 +24,7 @@
 
 .container_hour {width: 960px; margin: 0 auto; overflow: hidden;}
 
-.clock {width:635px; margin-left: 525px; margin-top: 140px; padding:30px; border:1px solid #333; color:black; }
+.clock {width:635px; margin-left: 525px; margin-top: 125px; padding:30px; border:1px solid #333; color:black; }
 
 #Date { padding-bottom: 65px; font-family: monospace, Arial, Helvetica, sans-serif; font-size:36px; text-align:center; text-shadow:0 0 5px #00c6ff; }
 
@@ -63,7 +63,7 @@ ul li.hour { display:inline; font-size:10em; text-align:center; font-family:'Beb
 }
 
 .marr{
-    width: 950px;
+    width: 800px;
 }
 
 .dolph{
