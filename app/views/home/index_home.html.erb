@@ -61,9 +61,12 @@
 <% if @absent.nil? %>
       $('.get_in').show();
       $('.get_out').hide();
-<% else %>
+<% elsif @absent.time_out.nil? %>
       $('.get_in').hide();
       $('.get_out').show();
+<% else %>
+      $('.get_in').hide();
+      $('.get_out').hide();
 <% end %>
 
     $('.get_in').click(function(){

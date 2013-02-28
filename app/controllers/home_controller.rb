@@ -36,7 +36,7 @@ class HomeController < ApplicationController
       flash[:alert] = "Check Out Succes"
       p "Get Out Succes"
     else
-      flash[:alert] = "Your time works in not appropriate yet at least time set or you have check out before"
+      flash[:alert] = "Your time works in not appropriate yet at least time set"
       p "Get Out Failed"
     end
   end

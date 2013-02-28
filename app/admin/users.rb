@@ -9,4 +9,16 @@ ActiveAdmin.register User do
     end
     f.buttons
   end
+  
+  index do
+    column :name
+    column :email
+    column :address
+    column :phone
+    default_actions
+  end
+  # Filter only by title
+  filter :name
+
+  
 end
