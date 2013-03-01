@@ -10,9 +10,6 @@
 //= require_tree .
 
 $(document).ready(function() {
-//    $('.get_out').hide();
-    
-    $(document).ready(function() {
         // Create two variable with the names of the months and days in an array
         var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
         var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
@@ -44,6 +41,4 @@ $(document).ready(function() {
             // Add a leading zero to the hours value
             $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
         }, 1000);	
-    });
-    
 });

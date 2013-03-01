@@ -24,7 +24,7 @@
 
 .container_hour {width: 960px; margin: 0 auto; overflow: hidden;}
 
-.clock {width:635px; margin-left: 525px; margin-top: 125px; padding:30px; border:1px solid #333; color:black; }
+.clock {width:635px; margin-left: 560px; margin-top: 125px; padding:30px; border:0px solid #333; color:black; }
 
 #Date { padding-bottom: 65px; font-family: monospace, Arial, Helvetica, sans-serif; font-size:36px; text-align:center; text-shadow:0 0 5px #00c6ff; }
 

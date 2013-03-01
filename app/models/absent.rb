@@ -4,6 +4,8 @@ class Absent < ActiveRecord::Base
   before_create :check_in
   before_update :check_out
   
+  delegate :name, :address, :phone, to: :user, prefix: true, allow_nil: true
+
   protected
   
   def check_in
