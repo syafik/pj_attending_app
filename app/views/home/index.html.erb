@@ -1,9 +1,97 @@
-<h1>You must sign in first</h1>
-<br />
-<table class="table">
-  <tr>
-    <td><h3>The number of employees who have entered</h3></td>
-    <td><h3><%= @users.count %></h3></td>
-  </tr>
-</table>
+<% if user_signed_in? %>
+  
+  <h1>Your Biodata</h1>
+  <table class="table table-striped">
+    <tr>
+      <td>
+        Name
+      </td>
+      <td>
+        :
+      </td>
+      <td>
+        <%= current_user.name %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Email 
+      </td>
+      <td>
+        :
+      </td>
+      <td>
+        <%= current_user.email %>
+      </td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td>:</td>
+      <td><%= current_user.address %></td>
+    </tr>
+    <tr>
+      <td>
+        Phone
+      </td>
+      <td>
+        :
+      </td>
+      <td>
+        <%= current_user.phone %>
+      </td>
+    </tr>
+  </table>
+  <button class="btn btn-primary get_in" id="get_in">Check In</button>
+  <button class="btn btn-primary get_out" id="get_out">Check Out</button>
+  <script src="/assets/clock.js" type="text/javascript"/></script>
+  <script>
+    $(document).ready(function(){
+  <% if @absent.nil? %>
+        $('.get_in').show();
+        $('.get_out').hide();
+  <% elsif @absent.time_out.nil? %>
+        $('.get_in').hide();
+        $('.get_out').show();
+  <% else %>
+        $('.get_in').hide();
+        $('.get_out').hide();
+  <% end %>
 
+      $('.get_in').click(function(){
+        $(this).attr('disabled','disabled')
+        $('.get_out').removeAttr('disabled','disabled')
+        $.ajax({
+          url: "<%= get_in_path %>",
+          type: 'POST',
+          data: { "absent[working_date]": "<%= DateTime.now.strftime("%Y-%m-%d %H:%M:%S") %>", "absent[time_in]": "<%= DateTime.now.strftime("%H").to_i %>", "absent[user_id]": <%= current_user.id %> },
+          context: document.body
+        }).done(function() {
+          $(this).addClass("done");
+        });
+      });
+    
+      $('.get_out').click(function(){
+        $(this).attr('disabled','disabled');
+        $('.get_in').removeAttr('disabled','disabled');
+        $.ajax({
+          url: "<%= get_out_path %>",
+          type: 'PUT',
+          data: { "absent[time_out]": "<%= DateTime.now.strftime("%H").to_i %>"},
+          context: document.body
+        }).done(function() {
+          $(this).addClass("done");
+        });
+      });
+    });
+
+  </script>
+<% else %>
+  <h1>You must sign in first</h1>
+  <br />
+  <table class="table">
+    <tr>
+      <td><h3>The number of employees who have entered</h3></td>
+      <td><h3><%= @users.count %></h3></td>
+    </tr>
+  </table>
+<% end %>
