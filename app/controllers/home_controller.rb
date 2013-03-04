@@ -1,15 +1,15 @@
 class HomeController < ApplicationController
   protect_from_forgery :except => [:update_get_in, :update_get_out]
-#  before_filter :authenticate_user!
+  #  before_filter :authenticate_user!
 
   def index
-    @time_working = WorkingTime.last.hour
+    @time_working = WorkingTime.last
     @users = Absent.where(' working_date BETWEEN ? AND ?' ,  DateTime.now.beginning_of_day.strftime("%Y-%m-%d %H:%M:%S"), DateTime.now.end_of_day.strftime("%Y-%m-%d %H:%M:%S")).all
     @absent = Absent.where('user_id = ? AND working_date BETWEEN ? AND ?' ,  current_user.id,  DateTime.now.beginning_of_day.strftime("%Y-%m-%d %H:%M:%S"), DateTime.now.end_of_day.strftime("%Y-%m-%d %H:%M:%S")).last unless current_user.blank?
     
     respond_to do |format|
       format.html
-      format.json {render json: @absent}
+      format.json {render json => @absent}
     end
   end
   

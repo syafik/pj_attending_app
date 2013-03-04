@@ -29,19 +29,19 @@
       </td>
     </tr>
     <tr>
+      <% if !@absent.nil? %>
       <td>Check In</td>
       <td>:</td>
-      <% if !@absent.nil? %>
         <td><%= @absent.time_in %></td>
       </tr>
       <tr>
         <td>Remaining Time</td>
         <td>:</td>
-        <td><%= (@absent.time_in + @time_working) - DateTime.now.strftime("%H").to_i %></td>
+        <td><%= (@absent.time_in + @time_working.hour) - DateTime.now.strftime("%H").to_i %></td>
       <tr>
         <td>Check Out</td>
         <td>:</td>
-        <td><%= @absent.time_in + @time_working %></td>
+        <td><%= @absent.time_in + @time_working.hour %></td>
       </tr>
     </tr>
   <% end %>
@@ -83,7 +83,7 @@
   <br />
   <h3>The number of employees who have entered today <%= @users.count %></h3>
   <table class="table table-striped">
-    <% if !@users.nil? %>
+    <% if !@users.nil? & !@time_working.nil? %>
       <tr>
         <th>Name</th>
         <th>Check In</th>
@@ -95,7 +95,7 @@
         <tr>
           <td><%= user.user[:name] %></td>
           <td><%= user[:time_in] %></td>
-          <td><%= (user.time_in + @time_working) - DateTime.now.strftime("%H").to_i %></td>
+          <td><%= (user.time_in + @time_working.hour) - DateTime.now.strftime("%H").to_i %></td>
         </tr>
       <% end %>
     <% end %>
