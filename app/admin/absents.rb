@@ -25,6 +25,7 @@ ActiveAdmin.register Absent do
     column :user_name
     column :user_address
     column :user_phone
+    default_actions
   end
   
 end
