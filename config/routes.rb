@@ -1,14 +1,17 @@
 NewAbsent::Application.routes.draw do
-  devise_for :users
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
+  devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
+
+  match 'users/sign_up' => redirect('/')
 
   get "home/index"
   post "/get_in" => "home#update_get_in"
   put "/get_out" => "home#update_get_out"
   root :to => 'home#index'
 
-  ActiveAdmin.routes(self)
-
-  devise_for :admin_users, ActiveAdmin::Devise.config
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

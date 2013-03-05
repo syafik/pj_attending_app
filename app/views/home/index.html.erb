@@ -30,26 +30,30 @@
     </tr>
     <tr>
       <% if !@absent.nil? %>
-      <td>Check In</td>
-      <td>:</td>
+        <td>Check In</td>
+        <td>:</td>
         <td><%= @absent.time_in %></td>
       </tr>
       <tr>
         <td>Remaining Time</td>
         <td>:</td>
         <td><%= (@absent.time_in + @time_working.hour) - DateTime.now.strftime("%H").to_i %></td>
-      <tr>
-        <td>Check Out</td>
-        <td>:</td>
-        <td><%= @absent.time_in + @time_working.hour %></td>
+        <tr>
+          <td>Check Out</td>
+          <td>:</td>
+          <td><%= @absent.time_in + @time_working.hour %></td>
+        </tr>
       </tr>
-    </tr>
-  <% end %>
+    <% end %>
   </table>
 
   <script type="text/javascript" src="/assets/clock.js"></script>
   <script>
+
     $(document).ready(function(){
+
+
+
       $('.get_in').click(function(){
         $(this).attr('disabled','disabled')
         $('.get_out').removeAttr('disabled','disabled')
@@ -62,7 +66,7 @@
           $(this).addClass("done");
         });
       });
-    
+
       $('.get_out').click(function(){
         $(this).attr('disabled','disabled');
         $('.get_in').removeAttr('disabled','disabled');
@@ -76,6 +80,7 @@
         });
       });
     });
+
   </script>
 
 <% else %>
@@ -114,6 +119,18 @@
 <% else %>
       $('.get_in').hide();
       $('.get_out').hide();
+<% end %>
+
+<% if DateTime.now.strftime("%H").to_i < @time_working.first_check_in || DateTime.now.strftime("%H").to_i > @time_working.last_check_in %>
+      $('.get_in').attr('disabled','disabled');
+<% else %>
+      $('.get_in').removeAttr('disabled','disabled');
+<% end %>
+  
+<% if DateTime.now.strftime("%H").to_i < @time_working.first_check_out || DateTime.now.strftime("%H").to_i > @time_working.last_check_out %>
+      $('.get_out').attr('disabled','disabled');
+<% else %>
+      $('.get_out').removeAttr('disabled','disabled');
 <% end %>
   });
 </script>
