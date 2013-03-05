@@ -9,3 +9,5 @@ User.delete_all
   user = User.create(:email => "pushjaw#{user+1}@pushjaw.com", :name => "pushjaw",
     :address => "jl. mig 3 no 1", :phone => "1234567890", :password => "12345678")
 end
+
+Absent.delete_all
