@@ -80,12 +80,12 @@
           <div class="well sidebar-nav">
             <h3>User</h3>
             <ul class="nav nav-list">
-              <% if user_signed_in? %>
-                <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %></li>
-                <li><%= link_to "Connect to Facebook", user_omniauth_authorize_path(:facebook) %></li>
-              <% else %>
-                <li><%= link_to "Sign In",  new_user_session_path  %></li>
-              <% end %>
+                <% if user_signed_in? %>
+                  <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %></li>
+                  <li><%= link_to "Connect to Facebook", user_omniauth_authorize_path(:facebook) %></li>
+                <% else %>
+                  <li><%= link_to "Sign In",  new_user_session_path  %></li>
+                <% end %>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

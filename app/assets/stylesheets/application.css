@@ -68,3 +68,8 @@ ul li.hour { display:inline; font-size:16px; text-align:center; font-family:'Beb
 .dolph{
     margin-top: 10px;
 }
+
+.outside{
+    font-weight: bold;
+    font-size: 20px;
+}

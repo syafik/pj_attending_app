@@ -22,26 +22,37 @@
       <td>:</td>
       <td><%= current_user.phone %></td>
     </tr>
-    <tr>
-      <td>
-        <button class="btn btn-primary get_in" id="get_in">Check In</button>
-        <button class="btn btn-primary get_out" id="get_out">Check Out</button>
-      </td>
-    </tr>
+    <% if @user_ip == "127.0.0.1" %>
+      <tr>
+        <td>
+          <button class="btn btn-primary get_in" id="get_in">Check In</button>
+          <button class="btn btn-primary get_out" id="get_out">Check Out</button>
+        </td>
+      </tr>
+    <% else %>
+      <tr><td></td></tr>
+      <tr>
+        <td class="outside">
+          You are outside the area
+        </td>
+      </tr>
+    <% end %>
     <tr>
       <% if !@absent.nil? %>
         <td>Check In</td>
         <td>:</td>
-        <td><%= @absent.time_in %></td>
+        <td><%= @absent.time_in.strftime("%H:%M") %></td>
       </tr>
       <tr>
-        <td>Remaining Time</td>
+        <td>Time Remaining</td>
         <td>:</td>
-        <td><%= (@absent.time_in + @time_working.hour) - DateTime.now.strftime("%H").to_i %></td>
+        <% tm_work_hour = ((@absent.time_in + @time_working.hour.hours - 7.hour).to_i - Time.now.to_i) / 3600 %>
+        <% tm_work_minute = (((@absent.time_in + @time_working.hour.hours).to_i - Time.now.to_i) % 3600) / 60 %>
+        <td><%=  "#{tm_work_hour} : #{tm_work_minute}" %></td>
         <tr>
           <td>Check Out</td>
           <td>:</td>
-          <td><%= @absent.time_in + @time_working.hour %></td>
+          <td><%= (@absent.time_in + @time_working.hour.hours).strftime("%H:%M") %></td>
         </tr>
       </tr>
     <% end %>
@@ -52,15 +63,13 @@
 
     $(document).ready(function(){
 
-
-
       $('.get_in').click(function(){
         $(this).attr('disabled','disabled')
         $('.get_out').removeAttr('disabled','disabled')
         $.ajax({
           url: "<%= get_in_path %>",
           type: 'POST',
-          data: { "absent[working_date]": "<%= DateTime.now.strftime("%Y-%m-%d %H:%M:%S") %>", "absent[time_in]": "<%= DateTime.now.strftime("%H").to_i %>", "absent[user_id]": <%= current_user.id %> },
+          data: { "absent[working_date]": "<%= DateTime.now.strftime("%Y-%m-%d %H:%M:%S") %>", "absent[time_in]": "<%= Time.now.strftime("%H:%M:%S") %>", "absent[user_id]": <%= current_user.id %> },
           context: document.body
         }).done(function() {
           $(this).addClass("done");
@@ -73,7 +82,7 @@
         $.ajax({
           url: "<%= get_out_path %>",
           type: 'PUT',
-          data: { "absent[time_out]": "<%= DateTime.now.strftime("%H").to_i %>"},
+          data: { "absent[time_out]": "<%= Time.now.strftime("%H:%M:%S") %>"},
           context: document.body
         }).done(function() {
           $(this).addClass("done");
@@ -99,8 +108,11 @@
       <% @users.each do |user| %>
         <tr>
           <td><%= user.user[:name] %></td>
-          <td><%= user[:time_in] %></td>
-          <td><%= (user.time_in + @time_working.hour) - DateTime.now.strftime("%H").to_i %></td>
+          <td><%= user[:time_in].strftime("%H:%M") %></td>
+          <% tm_work_hour = ((user.time_in + @time_working.hour.hours - 7.hour).to_i - Time.now.to_i) / 3600 %>
+          <% tm_work_minute = (((user.time_in + @time_working.hour.hours).to_i - Time.now.to_i) % 3600) / 60 %>
+          <td><%=  "#{tm_work_hour} : #{tm_work_minute}" %></td>
+
         </tr>
       <% end %>
     <% end %>
@@ -121,16 +133,16 @@
       $('.get_out').hide();
 <% end %>
 
-<% if DateTime.now.strftime("%H").to_i < @time_working.first_check_in || DateTime.now.strftime("%H").to_i > @time_working.last_check_in %>
-      $('.get_in').attr('disabled','disabled');
-<% else %>
+<% if DateTime.now.strftime("%H").to_i > @time_working.first_check_in && DateTime.now.strftime("%H").to_i < @time_working.last_check_in %>
       $('.get_in').removeAttr('disabled','disabled');
-<% end %>
-  
-<% if DateTime.now.strftime("%H").to_i < @time_working.first_check_out || DateTime.now.strftime("%H").to_i > @time_working.last_check_out %>
-      $('.get_out').attr('disabled','disabled');
 <% else %>
+      $('.get_in').attr('disabled','disabled');
+<% end %>
+
+<% if DateTime.now.strftime("%H").to_i > @time_working.first_check_out && DateTime.now.strftime("%H").to_i < @time_working.last_check_out %>
       $('.get_out').removeAttr('disabled','disabled');
+<% else %>
+      $('.get_out').attr('disabled','disabled');
 <% end %>
   });
 </script>
