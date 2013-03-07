@@ -6,7 +6,7 @@ WorkingTime.create(:hour => 8, :first_check_in => 8, :last_check_in => 11, :firs
 
 User.delete_all
 10.times do |user|
-  user = User.create(:email => "pushjaw#{user+1}@pushjaw.com", :name => "pushjaw",
+  user = User.create(:email => "pushjaw#{user+1}@pushjaw.com", :name => "pushjaw#{user+1}",
     :address => "jl. mig 3 no 1", :phone => "1234567890", :password => "12345678")
 end
 

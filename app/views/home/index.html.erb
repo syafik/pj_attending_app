@@ -99,7 +99,7 @@
   <br />
   <h3>The number of employees who have entered today <%= @users.count %></h3>
   <table class="table table-striped">
-    <% if !@users.nil? & !@time_working.nil? %>
+    <% if !@users.blank? && !@time_working.blank? %>
       <tr>
         <th>Name</th>
         <th>Check In</th>
