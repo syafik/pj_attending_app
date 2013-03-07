@@ -28,6 +28,8 @@
           <button class="btn btn-primary get_in" id="get_in">Check In</button>
           <button class="btn btn-primary get_out" id="get_out">Check Out</button>
         </td>
+        <td></td>
+        <td></td>
       </tr>
     <% else %>
       <tr><td></td></tr>
@@ -112,7 +114,6 @@
           <% tm_work_hour = ((user.time_in + @time_working.hour.hours - 7.hour).to_i - Time.now.to_i) / 3600 %>
           <% tm_work_minute = (((user.time_in + @time_working.hour.hours).to_i - Time.now.to_i) % 3600) / 60 %>
           <td><%=  "#{tm_work_hour} : #{tm_work_minute}" %></td>
-
         </tr>
       <% end %>
     <% end %>
@@ -120,8 +121,9 @@
 
 <% end %>
 
-<script>
+<script type="text/javascript">
   $(document).ready(function(){
+
 <% if @absent.nil? %>
       $('.get_in').show();
       $('.get_out').hide();
@@ -133,13 +135,13 @@
       $('.get_out').hide();
 <% end %>
 
-<% if DateTime.now.strftime("%H").to_i > @time_working.first_check_in && DateTime.now.strftime("%H").to_i < @time_working.last_check_in %>
+<% if DateTime.now.strftime("%H").to_i >= @time_working.first_check_in && DateTime.now.strftime("%H").to_i <= @time_working.last_check_in %>
       $('.get_in').removeAttr('disabled','disabled');
 <% else %>
       $('.get_in').attr('disabled','disabled');
 <% end %>
 
-<% if DateTime.now.strftime("%H").to_i > @time_working.first_check_out && DateTime.now.strftime("%H").to_i < @time_working.last_check_out %>
+<% if DateTime.now.strftime("%H").to_i >= @time_working.first_check_out && DateTime.now.strftime("%H").to_i <= @time_working.last_check_out %>
       $('.get_out').removeAttr('disabled','disabled');
 <% else %>
       $('.get_out').attr('disabled','disabled');

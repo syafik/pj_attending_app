@@ -1,5 +1,6 @@
 class Absent < ActiveRecord::Base
   attr_accessor :current_user
+  attr_accessible :time_out, :time_in, :working_date, :user_id
   belongs_to :user
   before_create :check_in
   before_update :check_out
@@ -20,13 +21,13 @@ class Absent < ActiveRecord::Base
   end
   
   def check_out
-  cond = Absent.where('user_id = ? AND DATE(working_date) = ?', current_user.id ,Date.today)
-    if cond.last.time_out.nil? & ((DateTime.now.strftime("%H").to_i - cond.last.time_in) >= WorkingTime.last.hour)
+  cond = Absent.where('user_id = ? AND DATE(working_date) = ?', current_user.id ,Date.today).first
+  p cond
+    if cond.time_out.blank? && ((Time.now.strftime("%H").to_i - cond.time_in.strftime("%H").to_i) >= WorkingTime.last.hour)
       p "you can update"
-      return true
+      self.time_out = Time.now
     else
       p "you can not update"
-      return false
     end
   end
 end

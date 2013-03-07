@@ -1,6 +1,6 @@
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def facebook
-    auth = request.env["omniauth.auth"]
+    p auth = request.env["omniauth.auth"]
 
     if user = User.find_by_uid(auth.uid)
       sign_in(user)
